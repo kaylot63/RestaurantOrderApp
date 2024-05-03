@@ -1,0 +1,68 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li, form, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set font family and size */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Container styles */
+.container {
+    max-width: 960px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #f8f9fa; /* Light gray */
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    margin-left: auto; /* Push nav items to the right */
+}
+
+.nav-link {
+    color: #333; /* Dark gray */
+    padding: 10px 20px;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue */
+    color: #fff; /* White */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Alert styles */
+.alert {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #d4edda; /* Green */
+    border-color: #c3e6cb; /* Light green */
+    color: #155724; /* Dark green */
+}

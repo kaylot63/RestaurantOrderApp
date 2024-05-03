@@ -1,0 +1,17 @@
+<!-- drinks.html -->
+{% extends 'base.html' %}
+
+{% block title %}Drinks - Restaurant Menu{% endblock %}
+
+{% block content %}
+
+
+<div class="container">
+    <h1>Drinks Menu</h1>
+    <ul>
+        {% for item in drinks %}
+            <li>{{ item.name }} - ${{ item.price }} <a href="{% url 'add_to_cart' item.id %}" class="btn btn-primary">Add to Cart</a></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

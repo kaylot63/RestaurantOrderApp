@@ -1,0 +1,16 @@
+<!-- breakfast.html -->
+<!-- breakfast.html -->
+{% extends 'base.html' %}
+
+{% block title %}Breakfast - Restaurant Menu{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Breakfast Menu</h1>
+    <ul>
+        {% for item in breakfast %}
+            <li>{{ item.name }} - ${{ item.price }} <a href="{% url 'add_to_cart' item.id %}" class="btn btn-primary">Add to Cart</a></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

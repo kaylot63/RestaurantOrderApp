@@ -1,0 +1,15 @@
+<!-- lunch.html -->
+{% extends 'base.html' %}
+
+{% block title %}Lunch - Restaurant Menu{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Lunch Menu</h1>
+    <ul>
+        {% for item in lunch %}
+            <li>{{ item.name }} - ${{ item.price }} <a href="{% url 'add_to_cart' item.id %}" class="btn btn-primary">Add to Cart</a></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

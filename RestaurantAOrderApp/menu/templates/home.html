@@ -1,0 +1,19 @@
+<!-- home.html -->
+{% extends 'base.html' %}
+
+{% block title %}Home - Restaurant Menu{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <h3>Welcome</h3>
+    <p>Explore our delicious menu:</p>
+    <ul>
+        <li><a href="{% url 'breakfast' %}">Breakfast</a></li>
+        <li><a href="{% url 'lunch' %}">Lunch</a></li>
+        <li><a href="{% url 'drinks' %}">Drinks</a></li>
+        <li><a href="{% url 'dessert' %}">Dessert</a></li>
+        <li><a href="{% url 'sides' %}">Sides</a></li>
+    </ul>
+</div>
+{% endblock %}
